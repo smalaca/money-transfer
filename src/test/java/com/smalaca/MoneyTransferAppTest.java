@@ -7,8 +7,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 class MoneyTransferAppTest {
     @Test
     void shouldAnswerWithTrue() {
-        MoneyTransferApp moneyTransferApp = new MoneyTransferApp();
+        String name = "Money Transfer App";
+        MoneyTransferApp moneyTransferApp = new MoneyTransferApp(name);
 
-        assertThat(moneyTransferApp.name()).isEqualTo("Money Transfer App");
+        assertThat(moneyTransferApp.name()).isEqualTo(name);
     }
 }
